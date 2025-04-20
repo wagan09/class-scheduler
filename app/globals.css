@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White background */
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 10 77% 26%; /* Maroon */
+    --primary-foreground: 60 67% 84%; /* Light Gold */
+    --secondary: 43 65% 53%; /* Gold */
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 220 14% 96%; /* Light Grey for subtle elements */
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 43 65% 53%; /* Gold */
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 220 13% 91%; /* Light Grey for borders */
+    --input: 220 13% 91%;
+    --ring: 10 77% 26%; /* Maroon */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 60 9.1% 97.8%;
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 60 9.1% 97.8%;
+    --primary: 10 77% 26%; /* Maroon */
+    --primary-foreground: 60 67% 84%; /* Light Gold */
+    --secondary: 43 65% 53%; /* Gold */
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+    --accent: 43 65% 53%; /* Gold */
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 10 77% 26%; /* Maroon */
+  }
+}
+
+@layer base {
+  /* * {
+    @apply border-border;
+  } */
+  body {
+    @apply bg-white text-foreground;
+  }
+}
+
+/* Custom header for University of Batangas */
+.ub-header {
+  @apply bg-ub-maroon text-white py-4 px-6 flex items-center justify-between;
+}
+
+.ub-logo {
+  @apply flex items-center gap-3;
+}
+
+.ub-logo-image {
+  @apply w-12 h-12 rounded-full bg-white p-1;
+}
+
+/* Calendar styles */
+.calendar-cell {
+  /* @apply relative border border-border rounded-md min-h-[4rem]; */
+  @apply relative border rounded-md min-h-[4rem];
+}
+
+.schedule-card {
+  @apply absolute inset-x-0 overflow-hidden rounded-md border border-primary/20 cursor-pointer;
+  @apply bg-primary/10 hover:bg-primary/20;
+}
+
+/* Grey accents */
+.grey-accent {
+  @apply bg-gray-100;
+}
+
+.grey-border {
+  @apply border-gray-200;
+}
+
+/* Schedule card colors */
+.schedule-maroon {
+  @apply bg-ub-maroon/10 hover:bg-ub-maroon/20 border-ub-maroon/20 text-ub-maroon;
+}
+
+.schedule-gold {
+  @apply bg-ub-gold/10 hover:bg-ub-gold/20 border-ub-gold/20 text-ub-darkMaroon;
+}
+
+.schedule-blue {
+  @apply bg-blue-100 hover:bg-blue-200 border-blue-200 text-blue-800;
+}
+
+.schedule-green {
+  @apply bg-green-100 hover:bg-green-200 border-green-200 text-green-800;
+}
+
+.schedule-purple {
+  @apply bg-purple-100 hover:bg-purple-200 border-purple-200 text-purple-800;
+}
+
+.schedule-orange {
+  @apply bg-orange-100 hover:bg-orange-200 border-orange-200 text-orange-800;
+}
