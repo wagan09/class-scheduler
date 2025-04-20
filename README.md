@@ -23,7 +23,7 @@ Before you begin, make sure the following are already installed on your computer
 - Type and select `Git: Clone`.
 - Paste the repository URL:
   ```
-  <your-repo-url>
+  https://github.com/wagan09/class-scheduler.git
   ```
 - Choose a folder to clone the project into.
 
